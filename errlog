@@ -1,0 +1,35 @@
+2018-02-02 17:27:52.228822: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+/home/drinkingcoder/Desktop/tensorflow/lib/python3.4/importlib/_bootstrap.py:321: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  return f(*args, **kwds)
+/home/drinkingcoder/Desktop/tensorflow/nyu_dataset_loader.py:6: UserWarning: 
+This call to matplotlib.use() has no effect because the backend has already
+been chosen; matplotlib.use() must be called *before* pylab, matplotlib.pyplot,
+or matplotlib.backends is imported for the first time.
+
+The backend was *originally* set to 'TkAgg' by the following code:
+  File "train.py", line 3, in <module>
+    import matplotlib.pyplot as plt
+  File "/home/drinkingcoder/Desktop/tensorflow/lib/python3.4/site-packages/matplotlib/pyplot.py", line 72, in <module>
+    from matplotlib.backends import pylab_setup
+  File "/home/drinkingcoder/Desktop/tensorflow/lib/python3.4/site-packages/matplotlib/backends/__init__.py", line 14, in <module>
+    line for line in traceback.format_stack()
+
+
+  matplotlib.use('Agg')
+WARNING:tensorflow:From /home/drinkingcoder/Desktop/tensorflow/lib/python3.4/site-packages/tensorflow/python/util/tf_should_use.py:118: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+Traceback (most recent call last):
+  File "train.py", line 174, in <module>
+    sess.run(train, feed_dict={x: images, y: depths})
+  File "/home/drinkingcoder/Desktop/tensorflow/lib/python3.4/site-packages/tensorflow/python/client/session.py", line 895, in run
+    run_metadata_ptr)
+  File "/home/drinkingcoder/Desktop/tensorflow/lib/python3.4/site-packages/tensorflow/python/client/session.py", line 1128, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/drinkingcoder/Desktop/tensorflow/lib/python3.4/site-packages/tensorflow/python/client/session.py", line 1344, in _do_run
+    options, run_metadata)
+  File "/home/drinkingcoder/Desktop/tensorflow/lib/python3.4/site-packages/tensorflow/python/client/session.py", line 1350, in _do_call
+    return fn(*args)
+  File "/home/drinkingcoder/Desktop/tensorflow/lib/python3.4/site-packages/tensorflow/python/client/session.py", line 1329, in _run_fn
+    status, run_metadata)
+KeyboardInterrupt
